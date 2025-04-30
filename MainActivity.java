@@ -8,14 +8,13 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
     private int counter = 0;
-    private TextView counterText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        counterText = findViewById(R.id.counterText);
+        TextView counterText = findViewById(R.id.counterText);
         Button tapButton = findViewById(R.id.tapButton);
 
         tapButton.setOnClickListener(new View.OnClickListener() {
